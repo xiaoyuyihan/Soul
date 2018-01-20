@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TipsFontStyle">
+        <item name="android:textColor">@color/orange700</item>
+        <item name="android:textStyle">bold</item></style>
+
+    <style name="TipsFontStyle.Small" parent="TipsFontStyle">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!-- view recycler item -->
+    <style name="ItemCardViewStyle" >
+        <item name="cardBackgroundColor">@color/grey400transparent</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardMaxElevation">4dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!-- -->
+    <style name="TextView.label">
+        <item name="android:textSize">8sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/shape_background_gray_round_textview</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="ItemCardViewStyle.text.review" parent="ItemCardViewStyle.text">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:background">@drawable/shape_fillet_view</item>
+    </style>
+    <style name="ItemCardViewStyle.text.time" parent="ItemCardViewStyle.text">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+    <style name="ItemCardViewStyle.text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">8dp</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.SmallTitle">
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="TextAppearance.AppCompat.BigTitle">
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="FragmentStyleMainTop">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/shape_background_beige_round_textview</item>
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--双击TextView 复制文字进行评论-->
+    <ScrollView
+        android:id="@+id/video_content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:scrollbars="none">
+        <include layout="@layout/player"/>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="@color/cyan_blue"
+        android:src="@drawable/image_write"/>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="28dp"
+        android:background="@color/title_color"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/image_test_avatar"
+            android:layout_marginStart="18dp"
+            android:id="@+id/imageView5" />
+
+        <TextView
+            android:text="对于心理罪电视剧的研究进行细密的分析和解读，分享一切"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView8"
+            android:layout_alignBottom="@id/imageView5"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="56dp"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_toLeftOf="@+id/textView17"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:text="+  关注"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_background_gray_round_textview"
+            android:id="@+id/textView17" />
+    </RelativeLayout>
+
+</RelativeLayout>

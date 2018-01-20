@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/view_top"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_top_linear">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--轮播-->
+            <ViewFlipper
+                android:id="@+id/fragment_found_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/image_test_image" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/image_test_viedo" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/image_test_avatar" />
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:id="@+id/fragment_found_classify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/fragment_found_carousel"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:text="知识"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_found_knowledge"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/fragment_found_knowledge"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="疑问"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_found_question"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/fragment_found_question"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="档案"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_found_academic"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/fragment_found_records"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="帮助"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_found_help"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/fragment_found_cases"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/color_shadow"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_found_recycler_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/fragment_found_classify"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fragment_dialog_add_writing_item_string">
+        <item>心理笔记</item>
+        <item>心理实验</item>
+        <item>热点话题</item>
+        <item>研究报告</item>
+    </string-array>
+    <integer-array name="fragment_dialog_add_writing_item_drawable">
+        <item>@drawable/fragment_add_item_notes</item>
+        <item>@drawable/fragment_add_item_experiment</item>
+        <item>@drawable/fragment_add_item_hotspot</item>
+        <item>@drawable/fragment_add_item_report</item>
+    </integer-array>
+    <string-array name="fragment_dialog_add_help_item_string">
+        <item>学术求助</item>
+        <item>心理求助</item>
+        <item>感情求助</item>
+        <item>其他求助</item>
+    </string-array>
+    <array name="fragment_dialog_add_help_item_drawable">
+        <item>@drawable/fragment_add_item_notes</item>
+        <item>@drawable/fragment_add_item_experiment</item>
+        <item>@drawable/fragment_add_item_hotspot</item>
+        <item>@drawable/fragment_add_item_report</item>
+    </array>
+
+    <string-array name="fragment_message_tab_item">
+        <item>消息</item>
+        <item>推送</item>
+        <item>通知</item>
+    </string-array>
+    <!-- 心理学分类（笔记，知识） 学科-心理学-分支-->
+    <string-array name="subject_branches_psychology_name">
+        <item>发展心理学</item>
+        <item>学习心理学</item>
+        <item>人格心理学</item>
+        <item>感知心理学</item>
+        <item>比较心理学</item>
+        <item>生理心理学</item>
+        <item>认知心理学</item>
+        <item>性别心理学</item>
+        <item>社会心理学</item>
+        <item>文化心理学</item>
+        <item>进化心理学</item>
+        <item>临床心理学</item>
+        <item>行为心理学</item>
+        <item>犯罪心理学</item>
+        <item>网络心理学</item>
+        <item>病理心理学</item>
+    </string-array>
+    <string-array name="subject_branches_psychology_introduction">
+        <item>研究人从胎儿出生到年老死亡的成长和发展的全过程。</item>
+        <item>探索人是如何发展成为如今的状态。研究人类和动物的学习发生过程和原因。</item>
+        <item>关注包括人格特征、动机和个体差异。</item>
+        <item>研究人类怎样感知周围世界，如正在研究人类是如何识别面孔的。</item>
+        <item>研究和比较不同种系的动物行为。</item>
+        <item>研究行为与生理过程之间的关系，特别是神经系统的活动。</item>
+        <item>主要研究思维问题，试图了解推理、问题解决、记忆及其他心理过程与人类行为的关系。</item>
+        <item>研究男性与女性之间的差异，探索生理因素、儿童扶养过程、教育、社会刻版印象等各种因素对性别差异的影响。</item>
+        <item>研究涉及态度、说服、骚乱、顺从、领导行为、种族歧视、友谊、婚恋等问题。</item>
+        <item>研究文化对人类行为的作用。</item>
+        <item>研究人类在历史长河中各种进化方式对行为的影响。如男性与女性之间的配偶选择方式。</item>
+        <item>主要研究心理健康和心理疾病。</item>
+        <item>研究有机体用以适应环境变化的各种身体反应的组合</item>
+        <item>研究犯人的意志、思想、意图及反应的学科</item>
+        <item>网络心理学</item>
+    </string-array>
+    <!-- 生活热点-->
+    <string-array name="life_hotspot">
+        <item>电影解析</item>
+        <item>热点解析</item>
+        <item>实事分析</item>
+    </string-array>
+</resources>

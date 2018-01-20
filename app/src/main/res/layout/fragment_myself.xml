@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_shadow"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_top"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_shadow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:padding="6dp">
+
+        <com.example.widget.ImageSphericView
+            android:id="@+id/imageSphericView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/image_test_avatar" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageSphericView"
+            android:textSize="16sp"
+            android:text="潇雨易寒" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageSphericView"
+            android:layout_alignStart="@+id/textView24"
+            android:layout_marginBottom="6dp"
+            android:textSize="12sp"
+            android:text="查看或编辑个人主页" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/color_shadow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_academic"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="我的关注" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_attention"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="我的收藏" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_subscription"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="我的订阅" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_draft"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="我的草稿" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_help"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="我的帮助" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_academic"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="我的学术档案" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/color_shadow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/fragment_myself_experimental"
+        android:drawablePadding="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="测试" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/fragment_myself_settings"
+        android:drawablePadding="14dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="设置" />
+</LinearLayout>

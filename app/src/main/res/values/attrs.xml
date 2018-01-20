@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StreakEditText">
+        <attr name="streakColor" format="color"/>
+        <attr name="streakPaddingHeight" format="dimension"/>
+        <attr name="streakWidth" format="dimension"/>
+    </declare-styleable>
+    <!--
+      borderOutThickness        -外圈
+      borderInsideThickness     -内圈
+      borderOutsideColor
+      borderInsideColor
+      text
+      textSize
+      borderShapeRound
+     -->
+    <declare-styleable name="ImageSphericView">
+        <attr name="borderOutThickness" format="dimension"/>
+        <attr name="borderInsideThickness" format="dimension"/>
+        <attr name="borderOutsideColor" format="color"/>
+        <attr name="borderInsideColor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="borderShapeRound" format="boolean"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>

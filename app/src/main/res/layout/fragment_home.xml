@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_main_top"
+            style="@style/FragmentStyleMainTop"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/fragment_home_top_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white200transparent"
+                android:drawableLeft="@drawable/ic_home_search"
+                android:drawablePadding="8dp"
+                android:drawableTintMode="src_in"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="搜索" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragment_main_top"
+            android:background="@color/grey400transparent" />
+        <!-- 点击扇形弹出 -->
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/ic_home_write"
+            android:visibility="gone"
+            app:backgroundTint="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:fab_addButtonColorNormal="@color/colorPrimaryDark"
+        app:fab_icon="@drawable/ic_home_write"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_home_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/blue"
+            app:fab_icon="@drawable/fragment_home_writing"
+            app:fab_size="mini"
+            app:fab_title="分享" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_home_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/blue"
+            app:fab_icon="@drawable/ic_question"
+            app:fab_size="mini"
+            app:fab_title="求助" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_home_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/blue"
+            app:fab_icon="@drawable/fragment_home_help"
+            app:fab_size="mini"
+            app:fab_title="回答" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_home_archives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/blue"
+            app:fab_icon="@drawable/fragment_home_archives"
+            app:fab_size="mini"
+            app:fab_title="档案" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</android.support.design.widget.CoordinatorLayout>

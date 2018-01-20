@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/shape_background_beige_round_textview"
+    android:layout_gravity="center">
+    <FrameLayout
+        android:id="@+id/fragment_dialog_add_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_dialog_add_bottom" />
+    <LinearLayout
+        android:id="@+id/fragment_dialog_add_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/fragment_dialog_add_bottom_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="取消"/>
+        <TextView
+            android:id="@+id/fragment_dialog_add_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="确定"/>
+    </LinearLayout>
+</RelativeLayout>
